@@ -23,3 +23,56 @@ body {
 		}
 	}
 }
+
+
+.text {
+	width: 50%;
+	background: #ddd;
+	padding: 20px;
+	&.red {
+		background: red;
+		color: #fff;
+	}
+	&.blue {
+		background: blue;
+		color: #fff;
+	}
+	&.green {
+		background: green;
+		color: #fff
+	}
+	&.toggle {
+		background: black;
+		color: #fff;
+	}
+}
+button {
+	margin-top: 5px;
+	display: inline-block;
+	padding: 10px 20px;
+	font-size: 16px;
+	text-transform: uppercase;
+	border: 1px solid transparent;
+	border-radius: 2px;
+	transition: .3s;
+	&:hover {
+		transition: .3s;
+		opacity: .6;
+	}
+	&.red {
+		background: red;
+		color: #fff;
+	}
+	&.blue {
+		background: blue;
+		color: #fff;
+	}
+	&.green {
+		background: green;
+		color: #fff
+	}
+	&.black {
+		background: black;
+		color: #fff;
+	}
+}

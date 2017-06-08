@@ -199,3 +199,47 @@ div[data-toggle].active .inactive {
       -webkit-transition: .3s;
       transition: .3s;
       background: black; }
+
+.text {
+  width: 50%;
+  background: #ddd;
+  padding: 20px; }
+  .text.red {
+    background: red;
+    color: #fff; }
+  .text.blue {
+    background: blue;
+    color: #fff; }
+  .text.green {
+    background: green;
+    color: #fff; }
+  .text.toggle {
+    background: black;
+    color: #fff; }
+
+button {
+  margin-top: 5px;
+  display: inline-block;
+  padding: 10px 20px;
+  font-size: 16px;
+  text-transform: uppercase;
+  border: 1px solid transparent;
+  border-radius: 2px;
+  -webkit-transition: .3s;
+  transition: .3s; }
+  button:hover {
+    -webkit-transition: .3s;
+    transition: .3s;
+    opacity: .6; }
+  button.red {
+    background: red;
+    color: #fff; }
+  button.blue {
+    background: blue;
+    color: #fff; }
+  button.green {
+    background: green;
+    color: #fff; }
+  button.black {
+    background: black;
+    color: #fff; }
