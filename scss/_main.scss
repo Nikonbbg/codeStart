@@ -85,3 +85,57 @@ button {
 		color: #fff;
 	}
 }
+
+.menu-dropdown {
+	display: block;
+	font-size: 0;
+	.f-item-list {
+		display: inline-block;
+		vertical-align: top;
+		position: relative;
+		&:hover {
+			.list-down {
+				position: absolute;
+				left: 0;
+				max-width: 160px;
+				display: inline-block;
+			}
+		}
+		.f-item-a {
+			padding: 10px;
+			display: block;
+			font-size: 16px;
+			text-transform: uppercase;
+			background: #ddd;
+			transition:.3s;
+			&:hover {
+				transition:.3s;
+				background: black;
+				color: #fff;
+			}
+		}
+	}
+	.list-down {
+		font-size: 14px;
+		display: none;
+		li {
+			padding: 5px 10px;
+			background: black;
+			border: 1px solid black;
+			&:hover {
+				transition: .3s;
+				background:#fff;
+				a {
+					color: black;
+				}
+			}
+			a {
+				display: block;
+				font-size: 12px;
+				width: 100%;
+				color: #fff;
+				transition: .3s;
+			}
+		}
+	}
+}

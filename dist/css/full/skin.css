@@ -250,3 +250,49 @@ button {
   button.black {
     background: black;
     color: #fff; }
+
+.menu-dropdown {
+  display: block;
+  font-size: 0; }
+  .menu-dropdown .f-item-list {
+    display: inline-block;
+    vertical-align: top;
+    position: relative; }
+    .menu-dropdown .f-item-list:hover .list-down {
+      position: absolute;
+      left: 0;
+      max-width: 160px;
+      display: inline-block; }
+    .menu-dropdown .f-item-list .f-item-a {
+      padding: 10px;
+      display: block;
+      font-size: 16px;
+      text-transform: uppercase;
+      background: #ddd;
+      -webkit-transition: .3s;
+      transition: .3s; }
+      .menu-dropdown .f-item-list .f-item-a:hover {
+        -webkit-transition: .3s;
+        transition: .3s;
+        background: black;
+        color: #fff; }
+  .menu-dropdown .list-down {
+    font-size: 14px;
+    display: none; }
+    .menu-dropdown .list-down li {
+      padding: 5px 10px;
+      background: black;
+      border: 1px solid black; }
+      .menu-dropdown .list-down li:hover {
+        -webkit-transition: .3s;
+        transition: .3s;
+        background: #fff; }
+        .menu-dropdown .list-down li:hover a {
+          color: black; }
+      .menu-dropdown .list-down li a {
+        display: block;
+        font-size: 12px;
+        width: 100%;
+        color: #fff;
+        -webkit-transition: .3s;
+        transition: .3s; }
