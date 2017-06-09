@@ -178,6 +178,13 @@ div[data-toggle].active .inactive {
 .none {
   display: none; }
 
+.slide button {
+  display: inline-block;
+  margin-bottom: 5px; }
+
+.slide .first-list {
+  display: block; }
+
 .first-list {
   display: inline-block;
   list-style-type: none;

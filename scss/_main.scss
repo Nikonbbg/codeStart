@@ -1,6 +1,15 @@
 body {
 }
 
+.slide {
+	button {
+		display: inline-block;
+		margin-bottom: 5px;
+	}
+	.first-list {
+		display: block;
+	}
+}
 .first-list {
 	display: inline-block;
 	list-style-type: none;

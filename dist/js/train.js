@@ -59,10 +59,41 @@ $(document).ready(function() {
 
 	// Обертка для манипуляции с DOM ( on(событие), off(событие) )
 
+	// $( "#bind" ).click(function() {
+	//   $( "body" )
+	//     .on( "click", "#theone" )
+	//     .find( "#theone" )
+	//       .text( "Могу кликать" );
+	// });
+	// $( "#unbind" ).click(function() {
+	//   $( "body" )
+	//     .off( "click", "#theone" )
+	//     .find( "#theone" )
+	//       .text( "Ничего не происходит в двоене" );
+	// });
 
-		// function notify() {
-		//   alert( "clicked" );
-		// }
-		// $( "button" ).on( "click", notify );
+	// Обертка для манипуляции с DOM ( slideIn(), slideOut(), slideToggle(), fadeIn(), fadeOut() )
+
+		// $('.slide-up').click(function(e){
+		// 	$(this).siblings('ul').slideUp();
+		// });
+		// $('.slide-down').click(function(e){
+		// 	$(this).siblings('ul').slideDown();
+		// });
+		// $('.slide-toggle').click(function(e){
+		// 	$(this).siblings('ul').slideToggle();
+		// });
+		// $('.fade-in').click(function(e){
+		// 	$(this).siblings('ul').fadeIn();
+		// });
+		// $('.fade-out').click(function(e){
+		// 	$(this).siblings('ul').fadeOut();
+		// });
+		// $('.fade').click(function(e){
+		// 	$(this).siblings('ul').fadeToggle();
+		// });
+
+	
+	// Обертка для манипуляции с DOM ( animate() )
 
 });
