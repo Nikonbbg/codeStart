@@ -93,7 +93,14 @@ $(document).ready(function() {
 		// 	$(this).siblings('ul').fadeToggle();
 		// });
 
-	
+
 	// Обертка для манипуляции с DOM ( animate() )
+	// $('.go').click(function(e) {
+	// 	var cub = $('.cube');
+	// 	cub.animate({height: '150px',top: '100px'}, "slow");
+	// 	cub.animate({width: '300px',left:'auto',right: '200px'}, "slow");
+	// 	cub.animate({height: '100px',top: '200px'}, "slow");
+	// 	cub.animate({width: '100px',right:'auto',left:'15px',top: '49px'}, "slow");
+	// });
 
 });
