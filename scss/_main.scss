@@ -184,3 +184,16 @@ button {
 		display: block;
 	}
 }
+
+.accordeon {
+	li {
+		a {
+			display: block;
+			font-size: 20px;
+			font-weight: 600;
+		}
+		p {
+			display: none;
+		}
+	}
+}

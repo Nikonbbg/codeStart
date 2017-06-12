@@ -109,20 +109,28 @@ $(document).ready(function() {
 
 	//  Tabs 
 
-	var ownActiveTab;
+	// var ownActiveTab;
 
-	ownActiveTab = function(defaultList, i){
-		var curNumber;
-		defaultList.find('[data-tab]').removeClass('active');
-		curNumber = defaultList.find('[data-tab]').eq(i);
-		curNumber.addClass('active');
-	};
+	// ownActiveTab = function(defaultList, i){
+	// 	var curNumber;
+	// 	defaultList.find('[data-tab]').removeClass('active');
+	// 	curNumber = defaultList.find('[data-tab]').eq(i);
+	// 	curNumber.addClass('active');
+	// };
 
-	$('.first-list li').click(function(e) {
+	// $('.first-list li').click(function(e) {
+	// 	e.preventDefault();
+	// 	$(this).addClass('active');
+	// 	$(this).siblings().removeClass('active');
+	// 	ownActiveTab($($(this).parents('.first-list').data('for')), $(this).index());
+	// });
+
+
+	// accordeon
+	$('.accordeon a').click(function(e){
 		e.preventDefault();
-		$(this).addClass('active');
-		$(this).siblings().removeClass('active');
-		ownActiveTab($($(this).parents('.first-list').data('for')), $(this).index());
+		$(this).parents('li').siblings('li').find('p').slideUp();
+		$(this).siblings('p').slideToggle();
 	});
 
 
