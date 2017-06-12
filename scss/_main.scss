@@ -118,23 +118,53 @@ button {
 	.list-down {
 		font-size: 14px;
 		display: none;
-		li {
-			padding: 5px 10px;
+		> li {
 			background: black;
 			border: 1px solid black;
 			&:hover {
 				transition: .3s;
-				background:#fff;
-				a {
-					color: black;
+				opacity: .8;
+			}
+		}
+		a {
+			padding: 5px 10px;
+			display: block;
+			font-size: 12px;
+			width: 100%;
+			color: #fff;
+			transition: .3s;
+			position: relative;
+		}
+		.list-a {
+			padding: 5px 10px;
+			display: block;
+			font-size: 12px;
+			width: 100%;
+			color: #fff;
+			transition: .3s;
+			position: relative;
+			&:hover {
+				.final-down {
+					display: block;
 				}
 			}
-			a {
-				display: block;
-				font-size: 12px;
-				width: 100%;
-				color: #fff;
+			.final-down {
+				display: none;
+			}
+		}
+	}
+	.final-down {
+		position: absolute;
+		left: 100%;
+		top: -1px;
+		background: black;
+		li {
+			&:hover {
 				transition: .3s;
+				opacity: .8;
+			}
+			a {
+				white-space: nowrap;
 			}
 		}
 	}
