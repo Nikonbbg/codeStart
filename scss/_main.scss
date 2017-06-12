@@ -18,6 +18,14 @@ body {
 	border: 1px solid black;
 	border-top: 1px solid transparent;
 	cursor: pointer;
+	&.inline-bl {
+		width: 100%;
+		display: block;
+		li {
+			display: inline-block;
+			width: auto;
+		}
+	}
 	li {
 		padding: 10px;
 		border-top: 1px solid black;
@@ -167,5 +175,12 @@ button {
 				white-space: nowrap;
 			}
 		}
+	}
+}
+
+.tabs-item {
+	display: none;
+	&.active {
+		display: block;
 	}
 }

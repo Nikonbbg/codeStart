@@ -193,6 +193,12 @@ div[data-toggle].active .inactive {
   border: 1px solid black;
   border-top: 1px solid transparent;
   cursor: pointer; }
+  .first-list.inline-bl {
+    width: 100%;
+    display: block; }
+    .first-list.inline-bl li {
+      display: inline-block;
+      width: auto; }
   .first-list li {
     padding: 10px;
     border-top: 1px solid black;
@@ -319,3 +325,8 @@ button {
       opacity: .8; }
     .menu-dropdown .final-down li a {
       white-space: nowrap; }
+
+.tabs-item {
+  display: none; }
+  .tabs-item.active {
+    display: block; }

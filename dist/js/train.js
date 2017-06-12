@@ -105,6 +105,25 @@ $(document).ready(function() {
 
 
 	// 10. Dropdown 
-	
+
+
+	//  Tabs 
+
+	var ownActiveTab;
+
+	ownActiveTab = function(defaultList, i){
+		var curNumber;
+		defaultList.find('[data-tab]').removeClass('active');
+		curNumber = defaultList.find('[data-tab]').eq(i);
+		curNumber.addClass('active');
+	};
+
+	$('.first-list li').click(function(e) {
+		e.preventDefault();
+		$(this).addClass('active');
+		$(this).siblings().removeClass('active');
+		ownActiveTab($($(this).parents('.first-list').data('for')), $(this).index());
+	});
+
 
 });
