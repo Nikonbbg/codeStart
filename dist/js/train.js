@@ -127,11 +127,48 @@ $(document).ready(function() {
 
 
 	// accordeon
-	$('.accordeon a').click(function(e){
-		e.preventDefault();
-		$(this).parents('li').siblings('li').find('p').slideUp();
-		$(this).siblings('p').slideToggle();
-	});
+	// $('.accordeon a').click(function(e){
+	// 	e.preventDefault();
+	// 	$(this).parents('li').siblings('li').find('p').slideUp();
+	// 	$(this).siblings('p').slideToggle();
+	// });
+
+
+	// tooltip
+	// $('.doble-toultip').click(function(e) {
+	// 	$('.up-toopltip').fadeToggle();
+	// });
+
+	// popover
+	// $('.doble-toultip').click(function(e) {
+	// 	$('.up-toopltip').fadeToggle();
+	// });
+
+		// var stringAl = document.getElementsByClassName('alert');
+		// $(stringAl).click(function(e) {
+		// 	alert($('.alert').html());
+		// });
+
+		// modal
+		// $('.btn-modal').click(function(e){
+		// 	$('.modal-window').toggleClass('active');
+		// });
+
+		// $('.close').click(function(e){
+		// 	$(this).parents('.modal-window').removeClass('active');
+		// });
+
+		// $(function($){
+		// 	$(document).mouseup(function (e){ // событие клика по веб-документу
+		// 		var div = $(".modal-window"); // тут указываем ID элемента
+		// 		if (!div.is(e.target) // если клик был не по нашему блоку
+		// 		    && div.has(e.target).length === 0) { // и не по его дочерним элементам
+		// 			div.removeClass('active'); // скрываем его
+		// 		}
+		// 	});
+		// });
+
+
 
 
 });

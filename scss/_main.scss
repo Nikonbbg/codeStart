@@ -197,3 +197,77 @@ button {
 		}
 	}
 }
+.own-wrap {
+	position: relative;
+}
+.doble-toultip {
+	margin-top: 200px;
+	display: inline-block;
+	background: black;
+	position: relative;
+	padding: 10px;
+	border-radius: 10px;
+	color: #fff;
+	cursor: pointer;
+	user-select: none;
+}
+.up-toopltip {
+	display: none;
+	background: green;
+	padding: 20px;
+	color: #fff;
+	left: 0;
+	border-radius: 15px;
+	white-space: nowrap;
+	position: absolute;
+	bottom: 140%;
+	&:before {
+		content:'';
+		position: absolute;
+		bottom: -10px;
+		left: 0;
+		right: 0;
+		display: block;
+		margin: 0 auto;
+		height: 20px;
+		transform: rotate(45deg);
+		width: 20px;
+		background: green;
+	}
+}
+.modal-window {
+	position: fixed;
+	top: 50px;
+	width: 30%;
+	left: 0;
+	color: #fff;
+	padding: 20px;
+	font-size: 24px;
+	border-radius: 10px;
+	right: 0;
+	display: block;
+	margin: 0 auto;
+	background: black;
+	transform: translateY(-200%);
+	transition: .3s;
+	&.active {
+		transition: .3s;
+		transform: translateY(0);
+	}
+	.close {
+		position: absolute;
+		top: 0px;
+		right: 10px;
+		cursor: pointer;
+		width: 15px;
+	}
+}
+.owl-item {
+	white-space: nowrap;
+	overflow: hidden;
+	.item {
+		display: inline-block;
+		width: 50%;
+		position: relative;
+	}
+}
